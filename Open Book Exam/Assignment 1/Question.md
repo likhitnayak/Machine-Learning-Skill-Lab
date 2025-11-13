@@ -47,5 +47,5 @@ The default prediction threshold of 0.5 is rarely optimal for a business problem
 Since the stakeholders are concerned about model fairness and want to ensure the model works equally well across different customer segments, you have to calculate and present the following metrics for your final model (using your chosen threshold) for these subgroups:
 - By Device_Type: (Mobile, Desktop, Tablet)
 - By City: (Report on the top 3 and bottom 3 performing cities)
-- 
+
 Metrics to report: PR-AUC, Precision, Recall, and F1-Score.
