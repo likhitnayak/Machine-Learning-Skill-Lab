@@ -19,13 +19,15 @@ You are provided with a dataset named marketplace_transactions.csv. It contains 
 
 ## Your Deliverables
 
-**Section 1: Problem Formulation & Churn Definition **
+**Section 1: Problem Formulation & Churn Definition**
+
 You have to define a metric for churn and provide a strong justification for your choice. While doing this, consider business cycles, product purchase frequency, and data availability.
 You need to decide on the unit of analysis for your model. Will you create one snapshot per customer (e.g., based on their last transaction before a specific cutoff date)? Or will you create periodic snapshots (e.g., one snapshot per active customer per month)? Define your rule and justify why it's appropriate for this business problem.
 
 Based on your definitions above, construct the target variable (churn = 1 or 0) for each snapshot. Crucially, explain your methodology for selecting a cutoff date and ensuring you are not peeking into the future when creating these labels (no data leakage).
 
 **Section 2: Feature Engineering & Preprocessing Pipeline**
+
 The raw data is just a starting point and you are allowed to engineer new, meaningful features. Think about RFM (Recency, Frequency, Monetary) metrics, behavioral patterns, or aggregations over a customer's history. Examples: days_since_last_order, avg_time_between_orders, total_spend, preferred_product_category, etc.
 
 Once you have decided the set of features (with justifications), you have to build a pipeline that takes care of all the preprocessing workflow. This pipeline should handle:
@@ -39,6 +41,7 @@ Once you have decided the set of features (with justifications), you have to bui
 3) Model Comparison: Present the best PR-AUC scores for each of the two tuned models. Select the single best-performing model that you will recommend to the stakeholders.
 
 **Section 4: Evaluation, Thresholding, and Subgroup Analysis**
+
 The default prediction threshold of 0.5 is rarely optimal for a business problem. Plot the Precision-Recall curve for your final model and choose a specific decision threshold (e.g., 0.35). Justify your choice from a business perspective. (e.g., "We chose a threshold of 0.4 because it allows us to identify 60% of true churners (Recall) while ensuring that 75% of our flagged customers are indeed at risk (Precision), which is an acceptable trade-off for our marketing budget.")
 
 Since the stakeholders are concerned about model fairness and want to ensure the model works equally well across different customer segments, you have to calculate and present the following metrics for your final model (using your chosen threshold) for these subgroups:
