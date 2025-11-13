@@ -6,17 +6,19 @@ A crucial requirement from the leadership is explainability. The campaign manage
 
 Your task is to analyze the provided transaction dataset and build a predictive model for churn.
 
-The Dataset
+**The Dataset**
+
 You are provided with a dataset named marketplace_transactions.csv. It contains 18 columns detailing customer orders and behavior from 2023-01-01 to 2024-03-26, where each customer has multiple orders
 
-Order Information: Order_ID, Date
-Customer Demographics: Customer_ID, Age, Gender, City
-Product Information: Product_Category, Unit_Price, Quantity
-Transaction Details: Discount_Amount, Total_Amount, Payment_Method
-Customer Behavior Metrics: Device_Type, Session_Duration_Minutes, Pages_Viewed, Is_Returning_Customer
-Post-Purchase Metrics: Delivery_Time_Days, Customer_Rating
+- Order Information: Order_ID, Date
+- Customer Demographics: Customer_ID, Age, Gender, City
+- Product Information: Product_Category, Unit_Price, Quantity
+- Transaction Details: Discount_Amount, Total_Amount, Payment_Method
+- Customer Behavior Metrics: Device_Type, Session_Duration_Minutes, Pages_Viewed, Is_Returning_Customer
+- Post-Purchase Metrics: Delivery_Time_Days, Customer_Rating
 
-Your Deliverables
+**Your Deliverables**
+
 Section 1: Problem Formulation & Churn Definition 
 You have to define a metric for churn and provide a strong justification for your choice. While doing this, consider business cycles, product purchase frequency, and data availability.
 You need to decide on the unit of analysis for your model. Will you create one snapshot per customer (e.g., based on their last transaction before a specific cutoff date)? Or will you create periodic snapshots (e.g., one snapshot per active customer per month)? Define your rule and justify why it's appropriate for this business problem.
