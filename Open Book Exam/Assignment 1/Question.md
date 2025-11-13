@@ -45,6 +45,7 @@ Once you have decided the set of features (with justifications), you have to bui
 The default prediction threshold of 0.5 is rarely optimal for a business problem. Plot the Precision-Recall curve for your final model and choose a specific decision threshold (e.g., 0.35). Justify your choice from a business perspective. (e.g., "We chose a threshold of 0.4 because it allows us to identify 60% of true churners (Recall) while ensuring that 75% of our flagged customers are indeed at risk (Precision), which is an acceptable trade-off for our marketing budget.")
 
 Since the stakeholders are concerned about model fairness and want to ensure the model works equally well across different customer segments, you have to calculate and present the following metrics for your final model (using your chosen threshold) for these subgroups:
-By Device_Type: (Mobile, Desktop, Tablet)
-By City: (Report on the top 3 and bottom 3 performing cities)
+- By Device_Type: (Mobile, Desktop, Tablet)
+- By City: (Report on the top 3 and bottom 3 performing cities)
+- 
 Metrics to report: PR-AUC, Precision, Recall, and F1-Score.
