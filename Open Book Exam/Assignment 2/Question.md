@@ -41,6 +41,7 @@ Based on the raw data, you have to design a comprehensive preprocessing pipeline
 Also, keep in mind that you have split your data into training set and testing set.
 
 **Section 3: Model Development and Tuning**
+
 For each sample (id) in your test set, your model must predict a probability for the "loan_paid_back" variable. The goal should be to maximize the area under the ROC curve (AUC) between the predicted probability and the actual value.
 
 **Section 4: Subgroup Analysis**
