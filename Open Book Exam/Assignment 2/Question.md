@@ -50,4 +50,4 @@ The loan approval team needs to ensure the model is fair and doesn't disproporti
 - By education_level: (Report on each level present in the data)
 - By loan_purpose: (Report on the top 3 and bottom 3 performing purposes)
 
-Metrics to report: PR-AUC, Precision, Recall, and F1-Score. Discuss the business implications of any significant performance disparities you observe.
+Metrics to report: AUC
